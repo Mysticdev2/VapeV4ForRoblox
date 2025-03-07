@@ -3114,7 +3114,7 @@ run(function()
 	
 										FireDelays[item.itemType] = tick() + itemMeta.fireDelaySec
 										if switched then
-											task.wait(0.05)
+											task.wait(0.01)
 										end
 									end
 								end
@@ -4941,7 +4941,7 @@ run(function()
 	end
 	
 	Scaffold = vape.Categories.Utility:CreateModule({
-		Name = 'Scaffold',
+		Name = 'bridger',
 		Function = function(callback)
 			if label then
 				label.Visible = callback
@@ -4999,7 +4999,7 @@ run(function()
 				Label = nil
 			end
 		end,
-		Tooltip = 'Helps you make bridges/scaffold walk.'
+		Tooltip = 'Helps you make bridges.'
 	})
 	Expand = Scaffold:CreateSlider({
 		Name = 'Expand',
@@ -7197,7 +7197,7 @@ run(function()
 	end
 	
 	Breaker = vape.Categories.Minigames:CreateModule({
-		Name = 'Breaker',
+		Name = 'Nuker',
 		Function = function(callback)
 			if callback then
 				for _ = 1, 30 do
@@ -7265,7 +7265,7 @@ run(function()
 		Name = 'Update rate',
 		Min = 1,
 		Max = 120,
-		Default = 60,
+		Default = 120,
 		Suffix = 'hz'
 	})
 	Custom = Breaker:CreateTextList({
