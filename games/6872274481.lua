@@ -338,7 +338,7 @@ local function roundPos(vec)
 end
 
 local function switchItem(tool, delayTime)
-	delayTime = delayTime or 0.05
+	delayTime = delayTime or 0.001
 	local check = lplr.Character and lplr.Character:FindFirstChild('HandInvItem') or nil
 	if check and check.Value ~= tool and tool.Parent ~= nil then
 		task.spawn(function()
@@ -5012,7 +5012,7 @@ run(function()
 	})
 	Downwards = Scaffold:CreateToggle({
 		Name = 'Downwards',
-		Default = true
+		Default = false
 	})
 	Diagonal = Scaffold:CreateToggle({
 		Name = 'Diagonal',
