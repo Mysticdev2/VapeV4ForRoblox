@@ -91,7 +91,7 @@ run(function()
 	local AutoGamble
 	
 	AutoGamble = vape.Categories.Minigames:CreateModule({
-		Name = 'AutoGamble',
+		Name = 'Autochestroll',
 		Function = function(callback)
 			if callback then
 				AutoGamble:Clean(bedwars.Client:GetNamespace('RewardCrate'):Get('CrateOpened'):Connect(function(data)
